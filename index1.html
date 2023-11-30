@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <head>
+        
+        <style>
+               body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+              header {
+            background-color: rgb(188, 149, 71);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            
+        }
+        #logo {
+           
+           max-width: 150px;
+           position: relative;
+           margin: 0 auto;
+           width: 90px;
+           height: 90px;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+        }
+        article {
+        color: #444;
+        margin-left: 3;
+        }
+
+        footer {
+            background-color: #333;
+            padding: 2em;
+            
+        }
+        footer p{
+            color: #f4f4f4;
+        }
+        .link1 {
+            float: left;
+            display:contents;
+        }
+        .sw1{
+            font-size: small;
+            text-align: center;
+        }
+
+        </style>
+
+    </head>
+    <body>
+        <form action="index1.html" method="get" >
+        <header>
+            <img id="logo" src="pics/o.png" alt="شعار الموقع">
+            <h1>The history of KFUPM</h1>
+        </header>
+    
+        <nav>
+            <a href="home.html" >Home</a>
+            <a href="history.html"> History</a>
+            <a href="Photo.html"> Photo Gallry</a>
+            <a href="Achievments.html"> Achievments</a>
+            <a href="contact us.html"> Contact Us</a>
+        </nav>
+        <article>
+            
+            <script>
+                
+                var a = new URLSearchParams(window.location.search);
+
+document.write("Name: " + a.get("Name") + "<br>");
+document.write("Email: " + a.get("Email") + "<br>");
+document.write("Phone: " + a.get("Phone") + "<br>");
+document.write("Address: " + a.get("Address") + "<br>");
+document.write("City: " + a.get("City") + "<br>");
+document.write("State: " + a.get("State") + "<br>");
+document.write("Zip: " + a.get("Zip") + "<br>");
+document.write("Delivery: " + a.get("Delivery") + "<br>");
+document.write("Date: " + a.get("date") + "<br>");
+            
+
+
+
+            </script>
+            
+        </article>
+            <footer>
+                <p class="sw1">
+                    Made By Dammam Community College Students Group 6
+                </p>            
+            </footer>
+        
+        </form>
+    </body>
+</html>
